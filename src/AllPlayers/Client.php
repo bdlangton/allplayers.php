@@ -1108,4 +1108,18 @@ class Client extends HttpClient
 
         return $this->delete($path, $query);
     }
+
+    /**
+     * Fetch HTML information from webapp.
+     *
+     * @param string $section
+     *   The section of HTML to retrieve (header or footer).
+     *
+     * @return string
+     *   HTML code for the header.
+     */
+    public function themeGetHtml($section = 'header')
+    {
+        return $this->get("theme/$section");
+    }
 }
