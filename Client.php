@@ -58,6 +58,20 @@ class Client extends HttpClient
     }
 
     /**
+     * Clear cache on webapp.
+     *
+     * @param string $cid
+     *   The cache CID.
+     * @param string $table
+     *   (optional) The cache table.
+     * @param bool $wildcard
+     *   (optional) Whether or not the CID should be treated as a substring.
+     */
+    public function groupClearCache($cid, $table = 'cache', $wildcard = 0) {
+        $this->post('groups/' . $cid . '/clearcache/' . $table . '/' . $wildcard);
+    }
+
+    /**
      * Get a list of users based on fields passed in.
      *
      * @param array $field
