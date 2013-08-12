@@ -3,13 +3,13 @@
     "description": "AllPlayers PHP Client",
     "autoload": {
         "psr-0": {
-            "AllPlayers": ""
+            "AllPlayers\\Tests\\Client": "tests/",
+            "AllPlayers": "src/"
         }
     },
-    "target-dir": "AllPlayers",
     "require": {
         "php": ">=5.3.2",
-        "guzzle/guzzle": "2.8.8"
+        "guzzle/guzzle": "3.0.*"
     },
     "suggest": {
         "monolog/monolog": "Flexible logger; required to use TestLogPlugin for STDOUT provided."

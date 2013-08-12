@@ -1,0 +1,40 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 21 Sep 2012 20:40:57 GMT
+Content-Length: 618
+Connection: keep-alive
+Last-Modified: Fri, 21 Sep 2012 20:40:56 +0000
+Cache-Control: no-cache, must-revalidate, post-check=0, pre-check=0
+ETag: "1348260056"
+Vary: Accept
+Set-Cookie: SESS59ed25a04da75388e236f0401b4eb307=a8ef023bffd3e19fbf0508b4df54a298; path=/;
+Accept-Ranges: bytes
+Age: 0
+X-Cache: MISS
+
+<result>
+    <uuid>00f5a510-6255-11e1-a8fd-12313d186528</uuid>
+    <last_modified>1331181357</last_modified>
+    <status>1</status>
+    <email>swanson.c@example.com</email>
+    <picture>https://files.pdup.allplayers.com/sites/all/themes/allplayers960/images/avatar_selection/Hiking.png</picture>
+    <username>Clayton Swanson</username>
+    <firstname>Clayton</firstname>
+    <lastname>Swanson</lastname>
+    <gender>male</gender>
+    <nickname>Clayton</nickname>
+    <phone/>
+    <address/>
+    <sizes/>
+    <emergency_contact>
+        <emergency_address>
+            <street></street>
+            <city></city>
+            <state></state>
+            <postal_code></postal_code>
+            <country>us</country>
+        </emergency_address>
+    </emergency_contact>
+    <profile_url>https://www.pdup.allplayers.com/user/8618</profile_url>
+    <uri>https://www.pdup.allplayers.com/api/v1/rest/users/00f5a510-6255-11e1-a8fd-12313d186528</uri>
+</result>

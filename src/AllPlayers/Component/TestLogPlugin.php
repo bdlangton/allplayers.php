@@ -1,8 +1,8 @@
 <?php
 namespace AllPlayers\Component;
 
-use Guzzle\Http\Plugin\LogPlugin;
-use Guzzle\Common\Log\MonologLogAdapter;
+use Guzzle\Plugin\Log\LogPlugin;
+use Guzzle\Log\MonologLogAdapter;
 
 use Monolog\Handler\StreamHandler;
 use Monolog\Logger;

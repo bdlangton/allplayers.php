@@ -7,8 +7,8 @@ use InvalidArgumentException;
 
 use AllPlayers\Component\HttpClient;
 
-use Guzzle\Http\Plugin\CookiePlugin;
-use Guzzle\Http\Plugin\LogPlugin;
+use Guzzle\Plugin\Cookie\CookiePlugin;
+use Guzzle\Plugin\Log\LogPlugin;
 
 class Client extends HttpClient
 {
