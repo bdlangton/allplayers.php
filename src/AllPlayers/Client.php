@@ -1120,6 +1120,21 @@ class Client extends HttpClient
      */
     public function themeGetHtml($section = 'header')
     {
-        return $this->get("theme/$section");
+        // Check the cache if it is the footer.
+        if ($section == 'footer') {
+	    $cache = cache_get('theme-footer');
+            if (!empty($cache)) {
+                return $cache->data;
+	    }
+        }
+
+        // Get the HTML.
+        $html = $this->get("theme/$section");
+
+        // If it is the footer, save to cache.
+        if ($section == 'footer') {
+            cache_set('theme-footer', $html, 'cache', CACHE_TEMPORARY);
+        }
+        return $html;
     }
 }
